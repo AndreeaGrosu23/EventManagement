@@ -11,7 +11,8 @@ public abstract class EventFactory {
     Manager manager;
     List<Manager> managerList=null;
     final int numberHelpers=10;
-    final int numberManagers=3;
+    final int numberManagers=2;
+    Chief chief;
 
 
     public EventFactory(Events event) {

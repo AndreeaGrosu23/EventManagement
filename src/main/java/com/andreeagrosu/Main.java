@@ -38,11 +38,10 @@ public class Main {
         cocktailParty.addManager(manager1);
         cocktailParty.addManager(manager2);
         cocktailParty.addManager(manager3);
-        cocktailParty.addManager(manager4);
 
-        System.out.println(cocktailParty.helperList.size());
+        Chief chief = Chief.getInstance("John Doe", 4000);
 
-        if (manager1.eventCanStart(cocktailParty.helperList)) {
+        if (chief.eventCanStart(cocktailParty.helperList)) {
             cocktailParty.helpersAction();
             helper1.takeBreak();
             helper2.takeBreak();
